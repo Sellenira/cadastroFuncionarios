@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de funcionários</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <form action="incluirFuncionarios.php"
+          method="POST"
+          enctype="multipart/form-data">
+    <div>
+        <h1>Cadastro de Funcionários</h1>
+        <p>Digite as informações:</p>
+    <fieldset class="field">
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div>
+            <label>Sobrenome:</label>
+            <input type="text" name="sobrenome">
+        </div>
+    </fieldset>
+
+    <fieldset class="field">
+        <div>
+            <label>Idade:</label>
+            <input type="number" name="idade">
+        </div>
+
+        <div>
+            <label>Telefone:</label>
+            <input type="tel" name="telefone">
+        </div>
+     </fieldset>
+
+        <div class="div">
+            <label>Endereço:</label>
+            <input type="text" name="endereco" class="end">
+        </div>
+
+    <fieldset class="field">
+        <div class="div">
+            <label>Setor:</label>
+            <input type="text" name="setor">
+        </div>
+
+        <div class="div">
+            <label>Email:</label>
+            <input type="email" name="email">
+        </div>
+    </fieldset>
+
+        <div class="div">
+            <label>Salário</label>
+            <input type="number" name="salario">
+        </div>
+
+        <div class="div">
+            <label>Observação:</label>
+            <textarea rows="6" style="width: 500px;"  name="obs"></textarea>
+        </div>
+        <button type="submit" name="btn" class="btn">Enviar</button>
+    </div>
+    </form>
+</body>
+</html>
